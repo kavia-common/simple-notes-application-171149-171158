@@ -1,0 +1,78 @@
+.notes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notes-item {
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.notes-item:hover {
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.notes-item.selected {
+  background: rgba(37, 99, 235, 0.1);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12) inset;
+}
+
+.color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.color-default { background: #3b3b3b; }
+.color-pink { background: #ff9e9e; }
+.color-green { background: #91f48f; }
+.color-yellow { background: #fff599; }
+.color-cyan { background: #9effff; }
+.color-purple { background: #b69cff; }
+
+.note-meta {
+  min-width: 0;
+}
+
+.note-title {
+  color: var(--text);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-sub {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.note-delete {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  padding: 6px;
+  line-height: 1;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.note-delete:hover {
+  background: rgba(17, 24, 39, 0.06);
+  color: var(--error);
+}
+
+.notes-empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 12px;
+}

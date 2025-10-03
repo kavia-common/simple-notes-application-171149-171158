@@ -1,0 +1,29 @@
+.sidebar-root {
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 14px 8px 14px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.05), rgba(255,255,255,0));
+}
+
+.sidebar-title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.sidebar-content {
+  padding: 8px;
+  overflow-y: auto;
+}
